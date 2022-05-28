@@ -214,8 +214,9 @@ body {
 
                 .h-average {
                     display: flex;
-                    align-self: center;
-                    margin-left: -60px;
+                    margin-left: -50px;
+                    justify-content: center;
+                    flex-grow: 2 !important;
 
                     input {
                         width: 600px;
@@ -295,7 +296,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 100;
+            z-index: 1000;
             flex-direction: column;
 
             #select-input {
@@ -619,7 +620,8 @@ body {
     }
 
     body #header .container .h-row .h-average {
-        margin-left: 0;
+        margin-right: 43px;
+        justify-content: flex-end;
     }
 
     body main #main {
@@ -683,6 +685,7 @@ body {
 }
 
 @media only screen and(max-width:900px) {
+
     body main #all-post .all-post-container .post-like .input-section input{
         width: 180px;
     }
@@ -729,6 +732,12 @@ body {
     body main #main .main-right .create-post .post-container {
         width: 500px;
     }
+    body #header .container .h-row .h-left {
+        margin-bottom: 5px;
+    }
+    body #header .container .h-row .h-average{
+        margin: 0;
+    }
 
     body main #all-post .all-post-container {
         margin-left: 0;
@@ -769,6 +778,7 @@ body {
     body main #selectName #select-input{
     width: 300px !important;
     } 
+  
     body #header .container .h-row .h-average input {
         width: 350px;
     }
@@ -783,6 +793,9 @@ body {
 }
 
 @media only screen and(max-width:420px) {
+    body #header .container .h-row .h-average {
+        width: 80%;
+    }
     body #header .container .h-row .h-average input {
         width: 100%;
     }
